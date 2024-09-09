@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo Formulario #2</title>
+
+    <style>
+      div {
+        justify-content: space-between;
+      }
+
+      h1 {
+        text-align: center;
+        color: #f51010;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        gap: 3px;
+      }
+
+      .form-control {
+        display: flex;
+      }
+
+      .form-radio-control {
+        display: flex;
+        justify-content: right;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Employee Registration</h1>
+
+    <form action="">
+      <div class="form-radio-control">
+        <div>
+          <input type="radio" id="mr" name="opcion"  />
+          <label for="mr">Mr.</label>
+        </div>
+        <div>
+          <input type="radio" id="mrs" name="opcion" />
+          <label for="mrs">Mrs.</label>
+        </div>
+        <div>
+          <input type="radio" id="ms" name="opcion" />
+          <label for="ms">Ms.</label>
+        </div>
+      </div>
+      <div class="form-control">
+        <label for="">First Name</label>
+        <input type="text" placeholder="First Name" pattern="[a-zA-Z]*\s?[a-zA-Z]*"/>
+      </div>
+      <div class="form-control">
+        <label for="">Last name</label>
+        <input type="text" placeholder="Last Name" pattern="[a-zA-Z]*\s?[a-zA-Z]*\s?[a-zA-Z]*"/>
+      </div>
+      <div class="form-control">
+        <label for="">Mail</label>
+        <input type="email" pattern=".+@cecar.eu.co$" />
+      </div>
+      <div class="form-control">
+        <label for="">Address</label>
+        <input type="text" maxlength="100"/>
+      </div>
+      <div class="form-control">
+        <label for="">City</label>
+        <input type="text" />
+      </div>
+      <div class="form-control">
+        <label for="">State</label>
+        <select name="" id="">
+          <option value="1">Guajarat</option>
+          <option value="2">1</option>
+          <option value="3">2</option>
+          <option value="4">3</option>
+        </select>
+      </div>
+      <div class="form-control">
+        <label for="">Zip</label>
+        <input type="text" />
+      </div>
+      <div  class="form-control">
+        <label  for="">Upload Photo</label>
+        <input type="file" />
+      </div>
+    </form>
+  </body>
+</html>
